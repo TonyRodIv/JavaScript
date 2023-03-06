@@ -1,17 +1,18 @@
 let horaMin1 = [prompt("Digite o hórario que iniciou em horas (somente hora): "), prompt("Digite o hórario que começou em minutos (somente o minuto da hora): ")]
 let horaMin2 = [prompt("Digite o hórario que acabou em horas (somente hora): "), prompt("Digite o hórario que acabou em minutos (somente o minuto da hora): ")]
-function tempo(h1, m1, h2, m2) {
+function tempo(horaInicial, minutoInicial, horaFinal, minutoFinal) {
     let tempoRestanteH, tempoRestanteM;
 
-    if (h1 > h2) {
-      tempoRestanteH = h2 - h1;
-    } else {
-      tempoRestanteH = h1 - h2;
+    if (horaInicial < horaFinal) {
+      tempoRestanteH = horaFinal - horaInicial;
+    } else{
+      tempoRestanteH = horaInicial - horaFinal - 24;
     }
-    if (m1 < m2) {
-      tempoRestanteM = m1 - m2;
+    
+    if (minutoInicial < minutoFinal) {
+      tempoRestanteM = minutoInicial - minutoFinal;
     } else {
-      tempoRestanteM = m2 - m1;
+      tempoRestanteM = minutoFinal - minutoInicial;
     }
     
     tempoRestanteH=Math.abs(tempoRestanteH)
