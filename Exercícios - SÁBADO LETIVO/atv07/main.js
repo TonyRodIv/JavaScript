@@ -19,4 +19,4 @@ const countdown = ()=>{
     document.querySelector('.second').innerHTML = String(textSecond).padStart(2,'0')
 }
 console.log(countdown)
-setInterval(countdown,1000)
+setInterval(countdown,1000) //criar um intervalo de 1000 segundos para ativar a função
