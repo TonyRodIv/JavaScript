@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Locadora</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <p class="titulo">LOCADORA JS</p>
+            <div class="inputDiv">
+                <p id="nameInput">Título do filme:</p>
+                <input type="text" id="name">
+            </div>
+            <div class="inputDiv">
+                <p id="nameInput">Duração do filme:</p>
+                <input type="number" name="tempoM" id="tempoM">
+            </div>
+            <button id="convert" onclick="conversor()">Converter Horas em Minutos</button>
+        </div>
+
+        <div class="result">
+            <p id="nomeResul"></p>
+            <p id="tempoResul"></p>
+        </div>
+
+    </main>
+    <script src="./locadora.js"></script>
+</body>
+</html>
